@@ -43,6 +43,7 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class ssh {
-
+  class { 'ssh::install': } ->         ###First install and check if service is running
+  class { 'ssh::service': }
 
 }
